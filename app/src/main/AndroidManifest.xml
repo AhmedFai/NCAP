@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ncap.irfan.ncap">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:name="com.ncap.irfan.ncap.Bean"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.ncap.irfan.ncap.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ncap.irfan.ncap.WelcomeGuest" />
+        <activity android:name="com.ncap.irfan.ncap.Welcome" />
+        <activity android:name="com.ncap.irfan.ncap.Login" />
+        <activity android:name="com.ncap.irfan.ncap.Survey"></activity>
+    </application>
+
+</manifest>

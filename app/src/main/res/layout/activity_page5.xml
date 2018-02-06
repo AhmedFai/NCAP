@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ncap.irfan.ncap.Odometer">
+
+   <!-- <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        app:titleTextColor="#f2f2f2"
+        android:background="#318CE7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="NCAP"
+                android:textSize="18dp"
+                android:textColor="#f2f2f2"
+                />
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>-->
+    <TextView
+        android:text="Q 5 : Odometer Reading (km):"
+        android:gravity="start"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:hint="Odometer Reading (km)"
+            android:gravity="start|top"
+            android:id="@+id/odo"
+            android:paddingStart="18dp"
+            android:inputType="textCapCharacters"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,"
+            android:paddingEnd="18dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/textround"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/btround"
+                    android:textColor="#fff"
+                    android:text="Previous"
+                    android:id="@+id/previous"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/next"
+                    android:textColor="#ffffff"
+                    android:text="NEXT"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/btround"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

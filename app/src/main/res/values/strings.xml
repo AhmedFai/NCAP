@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NCAP</string>
+
+    <string-array name="Select_Name">
+
+        <item>--Select Survey--</item>
+        <item>Pollution</item>
+    </string-array>
+</resources>
